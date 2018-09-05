@@ -22,6 +22,8 @@ const formHandler = event => {
     const userBirthValue = userBirth.value;
     const userNameValue = userName.value;
 
+    console.log(userBirthValue);
+
     fetch(url, {
         method: "POST",
         headers: {
@@ -32,7 +34,7 @@ const formHandler = event => {
             birth : userBirthValue,
         })
     }).then(res => res.text())
-    .then(res => resHandler(res));
+    .then(result => resHandler(result));
 
 }
 

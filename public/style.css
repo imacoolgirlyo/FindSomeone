@@ -25,6 +25,7 @@ header{
 
 .input{
     margin-bottom: 5px;
+    border : 0;
 }
 
 input{
